@@ -1,0 +1,106 @@
+<html>
+<head>
+   <title>Home</title>
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="css/photoslider.css">
+</head>
+<body>
+
+<table width="100%" cellspacing="30">
+<tr>
+<td><a href="index.html"><img src="images/buttons/personal_logo.png" width="100%" height="90%"></a></td>
+<td><a href="myself.html"><img src="images/buttons/myselfbtn.png"></a></td>
+<td><a href="education.html"><img src="images/buttons/educationbtn.png"></a></td>
+<td>
+   <div class="dropdown">
+      <button class="dropbtn"><a href="family.html"><img    	src="images/buttons/familybtn.png"></a> 
+           <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+           <a href="parents.html">My Parents</a>
+           <a href="siblings.html">My Siblings</a>
+      </div>
+   </div> 
+</td>
+<td><a href="friends.html"><img src="images/buttons/friendsbtn.png"></a></td>
+<td><a href="cats.html"><img src="images/buttons/catsbtn.png"></a></td>
+<td><a href="gallery.html"><img src="images/buttons/gallerybtn.png"></a></td>
+</tr>
+</table>
+
+<table width="100%" cellspacing="40">
+<tr>
+<td colspan="7"><h1>MY FAMILY</h1></td>
+</tr>
+</table>
+
+<table align="center" width="60%" cellspacing="10">
+<tr>
+   <td>
+   <div class="slideshow-container">
+
+   <div class="mySlides fade">
+      <div class="numbertext"><font size="5">1 / 3</font></div>
+      <img border="3" src="images/pictures/family.png" style="width:100%">
+      <div class="text"><font size="5">2015</font></div>
+   </div>
+
+   <div class="mySlides fade">
+      <div class="numbertext"><font size="5">2 / 3</font></div>
+      <img border="3" src="images/pictures/family2.png" style="width:100%">
+      <div class="text"><font size="5">2021</font></div>
+   </div>
+
+   <div class="mySlides fade">
+      <div class="numbertext"><font size="5">3 / 3</font></div>
+      <img border="3" src="images/pictures/family3.png" style="width:100%">
+      <div class="text"><font size="5">2023</font></div>
+   </div>
+
+   </div>
+   <br>
+   <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+   </div>
+
+   <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+         }
+         slideIndex++;
+         if (slideIndex > slides.length) {slideIndex = 1}    
+         for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+         setTimeout(showSlides, 3000); 
+         }
+   </script>
+   <td>
+</tr>
+
+<tr>
+<td><p align="justify"><font face="times new roman" size="5">
+Meet my family. Here are photos of my family taken in 2015, 2021, and 2023.There are five people in my family including my father, my mother, my elder brother, me, and my younger sister. I am the second child and the eldest daughter in my family. I love my family so much because they are always there for me during good and bad times. Besides, they are my biggest supporters and fans. 
+</font></p></td>
+</tr>
+</table>
+
+<table width="100%" cellspacing="40">
+<tr bgcolor="#000080">
+<td colspan="7"><font color="white">©COPYRIGHT WARDAH HANANI BINTI AZIPLI 2023</font></td>
+</tr>
+</table>
+
+</body>
+</html>
